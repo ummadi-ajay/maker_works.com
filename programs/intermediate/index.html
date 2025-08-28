@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MakerWorks - Intermediate Level Program | Robotics & Coding for Kids in Mumbai</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="MakerWorks - Intermediate Level Program | Robotics & Coding for Kids in Mumbai">
+  <meta name="description" content="Join MakerWorks Intermediate Level Program. A 2-year program for kids aged 11–14 to learn robotics, programming, electronics, and AI/ML through hands-on projects.">
+  <meta name="keywords" content="MakerWorks Intermediate Level, robotics for kids Mumbai, coding for children, Arduino classes Mumbai, STEM for kids, Python programming, IoT projects">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://makerworkslab.in/programs/intermediate/">
+  <meta property="og:title" content="MakerWorks - Intermediate Level Program | Robotics & Coding for Kids in Mumbai">
+  <meta property="og:description" content="Join MakerWorks Intermediate Level Program. A 2-year program for kids aged 11–14 to learn robotics, programming, electronics, and AI/ML through hands-on projects.">
+  <meta property="og:image" content="https://makerworkslab.in/images/intermediate-hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://makerworkslab.in/programs/intermediate/">
+  <meta property="twitter:title" content="MakerWorks - Intermediate Level Program | Robotics & Coding for Kids in Mumbai">
+  <meta property="twitter:description" content="Join MakerWorks Intermediate Level Program. A 2-year program for kids aged 11–14 to learn robotics, programming, electronics, and AI/ML through hands-on projects.">
+  <meta property="twitter:image" content="https://makerworkslab.in/images/intermediate-hero.jpg">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Course",
+        "name": "Intermediate Level Program",
+        "description": "A 2-year program for kids aged 11–14 to learn robotics, programming, electronics, and AI/ML through hands-on projects at MakerWorks.",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "MakerWorks",
+          "sameAs": "https://makerworkslab.in",
+          "logo": "https://makerworkslab.in/images/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "G-25, A Wing - Sukhamani Apartment, EXPRESS ZONE Mall, Western Express Highway, near Oberoi Mall, Malad, Panch Bawadi, Malad East",
+            "addressLocality": "Mumbai",
+            "addressRegion": "MH",
+            "postalCode": "400097",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9137114223",
+            "contactType": "customer service",
+            "areaServed": "IN"
+          }
+        }
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "MakerWorks",
+        "url": "https://makerworkslab.in",
+        "logo": "https://makerworkslab.in/images/logo.png",
+        "description": "MakerWorks offers robotics, coding, AI, IoT, and 3D design classes for kids and teens in Mumbai.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "G-25, A Wing - Sukhamani Apartment, EXPRESS ZONE Mall, Western Express Highway, near Oberoi Mall, Malad, Panch Bawadi, Malad East",
+          "addressLocality": "Mumbai",
+          "addressRegion": "MH",
+          "postalCode": "400097",
+          "addressCountry": "IN"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+91-9137114223",
+          "contactType": "customer service",
+          "areaServed": "IN"
+        }]
+      }
+    ]
+  }
+  </script>
+
+ <!-- Assuming a shared styles.css -->
+    <style>
+        /* General styles from main page for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #000;
+            scroll-behavior: smooth;
+        }
+
+        /* Consistent header and navbar styles (copied from main page) */
+        header {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #0d6efd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #0a58ca;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff6600;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background: #f8f9fa;
+                padding: 10px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                margin-top: 10px;
+            }
+        }
+
+        section {
+            padding: 80px 20px 50px;
+        }
+
+        /* Hero section specific to Intermediate Level */
+        .intermediate-hero {
+            background-color: #ffc107; /* Warning color for intermediate */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intermediate-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: none;
+        }
+
+        .intermediate-hero p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            text-shadow: none;
+            font-weight: 400;
+        }
+
+        .intermediate-hero .btn {
+            background-color: #fff;
+            color: #ffc107; /* Warning color for button text */
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .intermediate-hero .btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .intermediate-hero .btn i {
+            font-size: 1.3rem;
+        }
+
+        /* Program Info Section */
+        .program-info-section {
+            background-color: #f8f9fa;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .program-info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .program-info-item .icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ffc107; /* Warning color for icons */
+        }
+
+        .program-info-item h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .program-info-item p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        /* Eligibility Section */
+        .eligibility-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .eligibility-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .eligibility-content {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+        }
+
+        .eligibility-content ul li {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.6;
+        }
+
+        .eligibility-content ul li::before {
+            content: "\f058"; /* Font Awesome check-circle icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Program details section */
+        .program-details {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .program-details h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ff6600;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background-color: #fefefe;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .feature-item .icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #fff3e0; /* Light orange background for icons */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-item .icon {
+            font-size: 2.5rem;
+            color: #ffc107; /* Warning color for icons */
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* Why Choose This Course Section */
+        .why-choose-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .why-choose-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .why-choose-item {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .why-choose-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .why-choose-item .icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ffe0cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .why-choose-item .icon {
+            font-size: 3rem;
+            color: #ff6600;
+        }
+
+        .why-choose-item h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .why-choose-item p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* Parent Reviews Section */
+        .reviews-section {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .reviews-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ff6600;
+            margin-bottom: 40px;
+        }
+
+        .review-card {
+            background-color: #fefefe;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card .quote-icon {
+            font-size: 2rem;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        .review-card p.review-text {
+            font-style: italic;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .review-card .reviewer-name {
+            font-weight: bold;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .review-card .reviewer-info {
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .pricing-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .pricing-card {
+            background-color: #fefefe;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .pricing-card .price-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .price-value small {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #777;
+        }
+
+        .pricing-card .description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .pricing-card .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .pricing-card .btn-primary:hover {
+            background-color: #0a58ca;
+            border-color: #0a58ca;
+        }
+
+        /* Footer styling (copied from main page) */
+        footer {
+            background-color: #fff3e0;
+            padding-top: 40px;
+        }
+
+        footer .card {
+            background-color: #ffe5b4 !important;
+            border: none !important;
+        }
+
+        footer .card h5 {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer .card p {
+            color: #555;
+        }
+
+        footer .list-unstyled li a {
+            color: #555 !important;
+            transition: color 0.3s ease;
+        }
+
+        footer .list-unstyled li a:hover {
+            color: #ff6600 !important;
+        }
+
+        footer .social-icons a {
+            color: #ff6600 !important;
+            font-size: 1.3rem;
+        }
+
+        footer .social-icons a:hover {
+            color: #e65c00 !important;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 14px;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="/">MakerWorks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+        <ul class="navbar-nav gap-3 fw-medium">
+          <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/learn/">Learn</a></li>
+          <li class="nav-item"><a class="nav-link" href="/makers/">Makers</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/programs/beginner/">Beginner Level</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="/programs/intermediate/">Intermediate Level</a></li>
+              <li><a class="dropdown-item" href="/programs/advanced/">Advanced Level</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Competitions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://wroindia.org/" target="_blank">WRO</a></li>
+              <li><a class="dropdown-item" href="https://www.vexrobotics.com/iq/competition/viqc-current-game" target="_blank">VEX IQ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="/projects/">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/gallery/">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <section class="intermediate-hero">
+        <div data-aos="fade-up">
+            <h1>Innovate & Build: Intermediate Level</h1>
+            <p>Advance your skills with microcontrollers, sensors, robotics, and foundational programming for real-world applications.</p>
+            <a href="#program-curriculum" class="btn">Explore Curriculum <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="program-info-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12">
+                    <div class="program-info-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="fas fa-user-graduate"></i></div>
+                        <h4>Age Group</h4>
+                        <p>Ages 11–14 years</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="program-info-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h4>Duration</h4>
+                        <p>2 Years (Weekend-Only Program)</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="program-info-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h4>Sessions</h4>
+                        <p>8 Advanced Activities Per Month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eligibility-section">
+        <div class="container">
+            <h2>Eligibility for Intermediate Level</h2>
+            <div class="eligibility-content" data-aos="fade-up">
+                <ul>
+                    <li>Basic understanding of electronics or block-based coding is recommended.</li>
+                    <li>Recommended for students aged 11-14 years.</li>
+                    <li>A strong interest in programming, robotics, and problem-solving.</li>
+                    <li>Access to a computer with internet connection for advanced simulations and software.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-details" id="program-curriculum">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-arduino icon"></i> <!-- Placeholder for Arduino icon -->
+                        </div>
+                        <h3>Arduino Microcontroller</h3>
+                        <p>Master the Arduino platform for controlling electronics, reading sensors, and building interactive projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-sensors icon"></i> <!-- Placeholder for Sensors icon -->
+                        </div>
+                        <h3>Sensors & Actuators</h3>
+                        <p>Learn to integrate various sensors (light, temperature, distance) and actuators (motors, servos) into your projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-phone icon"></i> <!-- Placeholder for App Inventor icon -->
+                        </div>
+                        <h3>MIT App Inventor</h3>
+                        <p>Create your own Android applications with a visual, block-based programming environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-robot icon"></i>
+                        </div>
+                        <h3>Ground Robotics</h3>
+                        <p>Design, build, and program autonomous ground robots to navigate environments and complete tasks.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-airplane icon"></i> <!-- Placeholder for RC Plane icon -->
+                        </div>
+                        <h3>Aerial Robotics (RC Plane)</h3>
+                        <p>Explore the principles of flight and control by building and piloting remote-controlled planes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-file-earmark-code icon"></i> <!-- Placeholder for Python icon -->
+                        </div>
+                        <h3>Python Basics</h3>
+                        <p>Get started with Python, a powerful and versatile programming language used in various fields.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-raspberry-pi icon"></i> <!-- Placeholder for Raspberry Pi icon -->
+                        </div>
+                        <h3>Raspberry Pi & IoT</h3>
+                        <p>Utilize Raspberry Pi for more complex projects, including Internet of Things (IoT) applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-eye icon"></i> <!-- Placeholder for Computer Vision icon -->
+                        </div>
+                        <h3>Computer Vision Basics</h3>
+                        <p>Introduce yourself to how computers can "see" and interpret images and videos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="feature-item">
+                        <div class="icon-container">
+                            <i class="bi bi-robot-fill icon"></i> <!-- Placeholder for AI/ML icon -->
+                        </div>
+                        <h3>AI/ML Fundamentals</h3>
+                        <p>Discover the core concepts of Artificial Intelligence and Machine Learning through practical examples.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>Why Choose MakerWorks Intermediate Level?</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-choose-item">
+                        <div class="icon-container">
+                            <i class="fas fa-microchip icon"></i>
+                        </div>
+                        <h3>Advanced Concepts</h3>
+                        <p>Dive deeper into electronics, programming, and robotics with more challenging projects and theories.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-choose-item">
+                        <div class="icon-container">
+                            <i class="fas fa-lightbulb icon"></i>
+                        </div>
+                        <h3>Real-World Applications</h3>
+                        <p>Apply your knowledge to practical, real-world problems, fostering innovative thinking and problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-choose-item">
+                        <div class="icon-container">
+                            <i class="fas fa-cogs icon"></i>
+                        </div>
+                        <h3>Project-Based Learning</h3>
+                        <p>Build a strong portfolio through hands-on projects that challenge and inspire, from concept to completion.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-choose-item">
+                        <div class="icon-container">
+                            <i class="fas fa-medal icon"></i>
+                        </div>
+                        <h3>Competitive Edge</h3>
+                        <p>Gain skills and experience that prepare you for advanced studies and competitive robotics events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2>What Parents Say About Us</h2>
+            <div id="parentReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="review-card">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="review-text">"The Intermediate Level at MakerWorks has been a game-changer for my child. They're tackling complex projects with enthusiasm and their understanding of coding and robotics has deepened significantly."</p>
+                                    <div class="reviewer-info">
+                                        <span class="reviewer-name">Mr. Desai</span><br>
+                                        <span class="text-muted">Parent of an Intermediate Level Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="review-card">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="review-text">"I'm so impressed with the practical skills my daughter is gaining. From building apps to understanding AI, MakerWorks is truly preparing her for the future. The instructors are fantastic!"</p>
+                                    <div class="reviewer-info">
+                                        <span class="reviewer-name">Mrs. Singh</span><br>
+                                        <span class="text-muted">Parent of an Intermediate Level Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="review-card">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="review-text">"My son's creativity has soared since joining the Intermediate program. He's constantly experimenting and building, and the challenges presented by the course keep him engaged and eager to learn more."</p>
+                                    <div class="reviewer-info">
+                                        <span class="reviewer-name">Ms. Reddy</span><br>
+                                        <span class="text-muted">Parent of an Intermediate Level Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#parentReviewsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#parentReviewsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Ready to Take the Next Step?</h2>
+            <div class="pricing-card" data-aos="zoom-in">
+                <h3>Intermediate Level Program</h3>
+                <div class="price-value">₹14992 <small>/Month</small></div>
+                <p class="description">Deepen your technical skills and bring more complex ideas to life with advanced projects!</p>
+                <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+            What is the duration of the Intermediate Level Program?
+          </button>
+        </h2>
+        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            The program runs for 1–2 years with weekend-only sessions, designed to build on beginner skills and introduce more complex coding, electronics, and robotics concepts.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+            What programming languages and tools will students learn?
+          </button>
+        </h2>
+        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Students will learn block-based coding and transition to Python and Arduino programming. They will also explore Micro:bit sensors, simple robotics, and IoT basics.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+            Do students need to complete the Beginner Level first?
+          </button>
+        </h2>
+        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            It’s recommended but not mandatory. Students with basic knowledge of coding or prior robotics exposure can join after an assessment.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading4">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+            What kind of projects will students work on?
+          </button>
+        </h2>
+        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Students will create interactive projects like automated vehicles, smart sensors, and mini IoT devices, helping them apply programming and electronics practically.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading5">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+            Are online sessions available?
+          </button>
+        </h2>
+        <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Currently, the Intermediate Level program is in-person at our Malad East, Mumbai lab for hands-on experience with electronics kits and robotics projects.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading6">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+            Can students continue practicing at home?
+          </button>
+        </h2>
+        <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Yes! Students are provided with Micro:bit kits, Arduino boards, and project guides so they can explore and improve their skills at home.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <footer class="pt-5" style="background-color: #fff3e0;">
+        <div class="container">
+            <div class="card shadow-lg rounded-4 p-4 border-0" style="background-color: #ffe5b4;">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5 class="mt-3">Join The Maker Movement</h5>
+                        <p class="text-dark">Innovation from scratch!</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/about/" class="text-dark text-decoration-none">About Us</a></li>
+                            <li><a href="/learn/" class="text-dark text-decoration-none">Learn</a></li>
+                            <li><a href="/projects/" class="text-dark text-decoration-none">Projects</a></li>
+                            <li><a href="/Makers" class="text-dark text-decoration-none">Makers</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/blog/" class="text-dark text-decoration-none">Blog</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>Get In Touch</h5>
+                        <p class="text-dark mb-1">Email: makerworkslab@gmail.com</p>
+                        <p class="text-dark mb-1">Phone: +91 9137114223</p>
+                        <p class="text-dark">Address: A-wing, Express Zone, Malad East, Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+                <div class="text-center border-top pt-3 mt-3">
+                    <p class="mb-0 text-dark">© 2025 MakerWorks. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+
