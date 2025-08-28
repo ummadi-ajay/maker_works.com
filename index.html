@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title & Meta -->
+  <title>MakerWorks - Robotics, Coding & Maker Space in Mumbai</title>
+  <meta name="description" content="MakerWorks is Mumbai's leading robotics & coding academy and maker space. We teach kids & teens robotics, coding, AI, IoT, 3D printing and also build real-world projects and prototypes.">
+  <meta name="keywords" content="coding classes for kids in Mumbai, robotics classes for children, kids programming Mumbai, microbit classes, Arduino classes Mumbai, AI for kids, IoT projects, 3D printing classes, best coding institute for kids, MakerWorks Mumbai, maker space Mumbai, robotics workshop for kids, STEM education Mumbai, coding academy, electronics classes for kids, Python for kids Mumbai">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="MakerWorks - Robotics, Coding & Maker Space in Mumbai">
+  <meta property="og:description" content="Learn robotics, coding, AI, IoT, 3D design, and build real-world projects at MakerWorks in Mumbai.">
+  <meta property="og:image" content="https://makerworkslab.in/images/og-preview.png">
+  <meta property="og:url" content="https://makerworkslab.in">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MakerWorks - Robotics, Coding & Maker Space in Mumbai">
+  <meta name="twitter:description" content="Robotics & coding classes for kids in Mumbai. Join MakerWorks to learn AI, IoT, 3D printing, Python, and build real-world projects.">
+  <meta name="twitter:image" content="https://makerworkslab.in/images/og-preview.png">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "MakerWorks",
+        "url": "https://makerworkslab.in",
+        "logo": "https://makerworkslab.in/images/logo.png",
+        "description": "MakerWorks offers robotics, coding, AI, IoT, and 3D design classes for kids in Mumbai.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "G-25, A Wing - Sukhamani Apartment, EXPRESS ZONE Mall, Western Express Highway, near Oberoi Mall, Malad, Panch Bawadi, Malad East",
+          "addressLocality": "Mumbai",
+          "addressRegion": "MH",
+          "postalCode": "400097",
+          "addressCountry": "IN"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+91-9137114223",
+          "contactType": "customer service",
+          "areaServed": "IN"
+        }]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "MakerWorks",
+        "url": "https://makerworkslab.in",
+        "logo": "https://makerworkslab.in/images/logo.png",
+        "description": "MakerWorks is a maker space in Mumbai where we build projects, prototypes, and robotics solutions using Arduino, Raspberry Pi, IoT, AI, and 3D printing.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "G-25, A Wing - Sukhamani Apartment, EXPRESS ZONE Mall, Western Express Highway, near Oberoi Mall, Malad, Panch Bawadi, Malad East",
+          "addressLocality": "Mumbai",
+          "addressRegion": "MH",
+          "postalCode": "400097",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Su 08:00-21:00",
+        "telephone": "+91-9137114223",
+        "sameAs": [
+          "https://www.facebook.com/yourpage",
+          "https://www.instagram.com/yourpage",
+          "https://www.linkedin.com/company/yourpage",
+          "https://www.youtube.com/yourpage"
+        ]
+      }
+    ]
+  }
+  </script>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MakerWorks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inlined styles that are specific to this page or override styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #000;
+            scroll-behavior: smooth;
+        }
+
+        /* Consistent header and navbar styles */
+        header {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            width: 100vw;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #0d6efd; /* Bootstrap primary blue, consistent with project.html's .text-primary */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #0a58ca; /* Darker shade of primary blue on hover */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff6600; /* Original hover color */
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background: #f8f9fa;
+                padding: 10px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                margin-top: 10px;
+            }
+        }
+
+        section {
+            padding: 100px 20px 60px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .story-img, .future-img {
+            border-radius: 0;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background: #1c1c1c;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 12px 16px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .counter {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6600;
+        }
+
+        /* --- NEW/UPDATED HERO SECTION STYLES --- */
+        .hero-section {
+            position: relative; /* Needed for overlay positioning */
+            background: url('images/Header.jpg') no-repeat center center/cover; /* Replace with an actual attractive image path if different */
+            color: white; /* Default text color for better contrast */
+            text-align: center;
+            padding: 150px 20px; /* Increased padding for more space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px; /* Ensure a minimum height */
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 1; /* Place overlay above background image */
+        }
+
+        .hero-content {
+            position: relative; /* Place content above the overlay */
+            z-index: 2;
+            max-width: 800px; /* Limit content width for better readability */
+        }
+
+        .hero-section h1 {
+            font-size: 3.8rem; /* Slightly larger heading */
+            font-weight: 800;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow for impact */
+            color: #fff; /* White text for better contrast */
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem; /* Larger paragraph text */
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+            color: #f8f9fa; /* Off-white for subtle contrast with heading */
+            line-height: 1.6;
+        }
+
+        .hero-section .btn {
+            margin-top: 40px; /* More space above the button */
+            padding: 18px 35px; /* Larger button */
+            font-size: 1.3rem; /* Larger button text */
+            background-color: #ff6200;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .hero-section .btn:hover {
+            background-color: #e65c00;
+            transform: translateY(-3px); /* Slight lift on hover */
+        }
+        /* --- END HERO SECTION STYLES --- */
+
+        .card {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .card-text {
+            font-size: 1.1rem;
+            color: #333;
+        }
+        #journey {
+            padding: 60px 0;
+        }
+        .timeline li {
+            margin-bottom: 30px;
+        }
+        .year {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ff8c00;
+        }
+        /* Footer styling */
+        .social-icons a {
+            color: #000;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0d6efd;
+        }
+        footer ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Custom Styles for better layout */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 80px 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 30px;
+            min-width: 300px; /* Ensure it doesn't get too small */
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .about-text .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-text .btn:hover {
+            background-color: #e65c00;
+        }
+
+        .about-video {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 992px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        .distinction-section {
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .distinction-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 60px;
+        }
+
+        .distinctions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .distinction-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .distinction-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .distinction-item i {
+            font-size: 3rem;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .distinction-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .distinction-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Card styles for Learning Levels and Competitions */
+        .level-card, .competition-card {
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .level-card:hover, .competition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .level-card .card-header, .competition-card .card-header {
+            background-color: #f8f9fa;
+            border-bottom: none;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .level-card .level-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #0d6efd; /* Primary color for icons */
+        }
+        .level-card.intermediate .level-icon { color: #ffc107; } /* Warning color */
+        .level-card.advance .level-icon { color: #dc3545; } /* Danger color */
+
+        .level-card .card-title, .competition-card .card-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .level-card .card-subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .level-card .price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ff6600;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .program-features {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .program-features li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .program-features li i {
+            color: #28a745;
+            margin-right: 8px;
+        }
+
+        .competition-card img {
+            max-height: 180px;
+            object-fit: contain;
+            padding: 20px;
+        }
+        .competition-card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .competition-card .card-text {
+            flex-grow: 1; /* Allow text to take up available space */
+            margin-bottom: 20px;
+        }
+        .competition-card .btn-link {
+            align-self: center;
+        }
+
+        .achievements img {
+            object-fit: cover;
+            width: 100%;
+            height: 250px; /* Fixed height for consistency */
+        }
+
+        .latest-blogs .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer specific styling */
+        footer .card {
+            background-color: #ffe5b4 !important;
+            border: none !important;
+        }
+
+        footer .card h5 {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        footer .card p {
+            color: #555;
+        }
+
+        footer .list-unstyled li a {
+            color: #555 !important;
+            transition: color 0.3s ease;
+        }
+
+        footer .list-unstyled li a:hover {
+            color: #ff6600 !important;
+        }
+
+            </style>
+</head>
+<body>
+   <header>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center active" aria-current="page" href="/">MakerWorks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+        <ul class="navbar-nav gap-3 fw-medium">
+          <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/learn/">Learn</a></li>
+          <li class="nav-item"><a class="nav-link" href="/makers/">Makers</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/programs/beginner/">Beginner Level</a></li>
+              <li><a class="dropdown-item" href="/programs/intermediate/">Intermediate Level</a></li>
+              <li><a class="dropdown-item" href="/programs/advanced/">Advanced Level</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Competitions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://wroindia.org/" target="_blank">WRO</a></li>
+              <li><a class="dropdown-item" href="https://www.vexrobotics.com/iq/competition/viqc-current-game" target="_blank">VEX IQ</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="/projects/">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/gallery/">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Innovate. Build. Inspire</h1>
+            <p>Join the MakerWorks movement and shape the future with your ideas.</p>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/919137114223" target="_blank" class="btn">WhatsApp</a>
+
+<!-- Contact Us Button (Opens Dialer) -->
+            <a href="tel:+919137114223" class="btn">Contact Us</a>
+
+        </div>
+    </section>
+
+    <section class="about-section container" id="about">
+        <div class="about-text" data-aos="fade-right">
+            <h2>Ideas grow stronger when you put them into action.</h2>
+            <p>We as Makers first depend on how to make things in an innovative way, not just to build and show it to others <strong>#innovateBuildinspire™</strong></p>
+            <a href="learn1.html" class="btn">Learn Maker Skills</a>
+        </div>
+        <div class="about-video" data-aos="fade-left">
+            <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" title="MakerWorks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="distinction-section">
+        <div class="container">
+            <h2 class="mb-5">What Makes Maker Works Different</h2>
+            <div class="distinctions row justify-content-center">
+                <div class="distinction-item col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Empowered Learners</h4>
+                    <p>We guide learners to discover their potential through curiosity, confidence, and a growth mindset.</p>
+                </div>
+                <div class="distinction-item col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-star"></i>
+                    <h4>Driven by Excellence</h4>
+                    <p>We hold high standards, fostering deep, accountable learning that goes beyond the surface.</p>
+                </div>
+                <div class="distinction-item col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-tools"></i>
+                    <h4>Built Through Doing</h4>
+                    <p>From concept to creation, we believe in making. Real-world projects are at the heart of every lesson.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learning-levels" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-2 text-dark-emphasis fw-bold">Our Curated Programs at</h2>
+            <h1 class="mb-5 display-4 fw-bold text-primary">The MakerWorks Lab</h1>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 level-card beginner d-flex flex-column">
+                        <div class="card-header">
+                            <div class="level-icon"><i class="bi bi-lightbulb"></i></div>
+                            <h4 class="card-title">Beginner Level</h4>
+                            <p class="card-subtitle">Spark curiosity with foundational making!</p>
+                            <span class="price">₹9992 /Month</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <ul class="program-features flex-grow-1">
+                                <li><i class="bi bi-check-circle-fill"></i> Basic Electronics & Circuits</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Logical Sequencing & Reasoning</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Variables & Loops</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Circuit Design & Simulation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Block-based Coding</li>
+                                <li><i class="bi bi-check-circle-fill"></i> BBC Micro:bit Controller</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="/programs/beginner/" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 level-card intermediate d-flex flex-column">
+                        <div class="card-header">
+                            <div class="level-icon"><i class="bi bi-gear"></i></div>
+                            <h4 class="card-title">Intermediate Level</h4>
+                            <p class="card-subtitle">Build, program, and innovate with purpose!</p>
+                            <span class="price">₹14992 /Month</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <ul class="program-features flex-grow-1">
+                                <li><i class="bi bi-check-circle-fill"></i> Arduino Microcontroller</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Sensors & Actuators</li>
+                                <li><i class="bi bi-check-circle-fill"></i> MIT App Inventor</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ground Robotics</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Aerial Robotics (RC Plane)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Python Basics</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Raspberry Pi & IoT</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Computer Vision Basics</li>
+                                <li><i class="bi bi-check-circle-fill"></i> AI/ML Fundamentals</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="/programs/intermediate/" class="btn btn-outline-warning w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 level-card advance d-flex flex-column">
+                        <div class="card-header">
+                            <div class="level-icon"><i class="bi bi-rocket"></i></div>
+                            <h4 class="card-title">Advanced Level</h4>
+                            <p class="card-subtitle">Master complex projects and lead innovation!</p>
+                            <span class="price">₹19992 /Month</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <ul class="program-features flex-grow-1">
+                                <li><i class="bi bi-check-circle-fill"></i> Advanced Python Programming</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Aerial Robotics (Drones)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Android App Development</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Advanced Computer Vision</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Advanced AI/ML Concepts</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Full Stack Web Development</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Game Development (Unity/Unreal)</li>
+                            </ul>
+                            <div class="mt-auto">
+                                <a href="/programs/advanced/" class="btn btn-outline-danger w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="competitions-section py-5" id="competitions">
+        <div class="container">
+            <h2 class="mb-2 text-dark-emphasis fw-bold text-center">Compete. Innovate. Excel.</h2>
+            <h1 class="mb-5 display-4 fw-bold text-success text-center">Competitions We Participate In</h1>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-10" id="vexiq" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card competition-card h-100">
+                        <img src="images/vex_iq_logo.png" class="card-img-top" alt="VEX IQ Robotics Competition Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">VEX IQ Robotics Competition</h5>
+                            <p class="card-text">VEX IQ challenges elementary and middle school students to design, build, and program robots to compete in a game-based engineering challenge. It fosters teamwork, problem-solving, and computational thinking skills.</p>
+                            <a href="https://www.vexrobotics.com/iq/competition/viqc-current-game" class="btn btn-link mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-sm-10" id="wro" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card competition-card h-100">
+                        <img src="images/wro_logo.jpg" class="card-img-top" alt="World Robot Olympiad (WRO) Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">World Robot Olympiad (WRO)</h5>
+                            <p class="card-text">WRO is a global robotics competition that brings together young people from all over the world to develop their creativity, design, and problem-solving skills through challenging robotics competitions.</p>
+                            <a href="https://wroindia.org/" class="btn btn-link mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements text-center py-5 position-relative bg-light" id="achievements">
+        <div class="container">
+            <div class="mb-4" data-aos="fade-down">
+                <span class="badge bg-warning text-dark fs-6 px-4 py-2 rounded-pill shadow-sm">🏆 Mekathlon Highlights</span>
+            </div>
+            <h2 class="mb-4 fw-bold" data-aos="fade-up">Maker Works Shines at Mekathlon 2024–2025!</h2>
+            <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-10">
+                    <p class="lead">Mekathlon isn’t just a competition — it’s a celebration of innovation, teamwork, and engineering spirit. Maker Works participated with full force, and our young makers truly delivered.</p>
+                    <p class="mb-3">Two of our teams took home top honors in the Racer Robo category:</p>
+                    <ul class="list-unstyled fs-5">
+                        <li>🥈 <strong>1<sup>st</sup> Runner-Up – Racer Robo Innovator</strong></li>
+                        <li>🥉 <strong>2<sup>nd</sup> Runner-Up – Racer Robo Developer</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/trophies.jpeg" alt="Mekathlon trophies" class="img-fluid rounded shadow-sm border border-3 border-warning" style="max-width: 320px;" />
+                    <p class="mt-2 text-muted text-center">Winning Trophies – Mekathlon 2024–25</p>
+                </div>
+                <div class="col-md-5 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/trophies.jpeg" alt="Maker Works student teams" class="img-fluid rounded shadow-sm border border-3 border-primary" style="max-width: 320px;" />
+                    <p class="mt-2 text-muted text-center">Team Maker Works – Proud Innovators</p>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-10">
+                    <p class="fs-5">From prototyping to problem-solving, our students gave their all. We are proud of their journey — that's the <strong>Maker Works</strong> spirit!</p>
+                    <a href="#" class="btn btn-outline-primary mt-3 px-4 py-2">🎉 See the Full Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="py-5 latest-blogs" style="background-color: #fffbe6;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Latest Maker Blogs</h2>
+    <p class="text-center text-muted mb-5">Arduino, Raspberry Pi, and DIY Innovations</p>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Blog 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-sm h-100 border-0 rounded-4">
+          <img src="images/blink an led.jpg" class="card-img-top rounded-top-4" alt="Blink LED">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Blink an LED with Arduino</h5>
+            <p class="card-text">Start your Arduino journey by making an LED blink—the simplest way to learn coding and circuits.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#blog1Modal">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm h-100 border-0 rounded-4">
+          <img src="images/IoT-based-Home-Automation-using-Blynk-App-and-Raspberry-Pi.jpg" class="card-img-top rounded-top-4" alt="Pi Home Automation">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Home Automation with Raspberry Pi</h5>
+            <p class="card-text">Control your home from anywhere! Learn how to use Pi with sensors and apps to automate everything.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#blog2Modal">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm h-100 border-0 rounded-4">
+          <img src="images/top sensors.jpg" class="card-img-top rounded-top-4" alt="Top Sensors for Arduino">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Top 5 Sensors for Arduino & Pi</h5>
+            <p class="card-text">Explore must-have sensors for IoT projects, including PIR, DHT11, IR and how to use them.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#blog3Modal">Read More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== MODALS ================== -->
+
+<!-- Blog 1 Modal -->
+<div class="modal fade" id="blog1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title">Blink an LED with Arduino</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>The "Blink" project is the most popular beginner project in Arduino. It’s often referred to as the "Hello World" of hardware programming because it teaches the very basics of controlling a microcontroller and interacting with electronic components.</p>
+
+        <h6>Why This Project Matters</h6>
+        <p>It introduces you to how digital pins work, how timing is controlled with code, and how circuits carry current to an output device such as an LED. Without this knowledge, more complex projects like robotics, IoT, or automation will be hard to build.</p>
+
+        <h6>What You Need</h6>
+        <ul>
+          <li>Arduino Uno board</li>
+          <li>1 LED (any color)</li>
+          <li>1 resistor (220Ω recommended)</li>
+          <li>Breadboard and jumper wires</li>
+          <li>USB cable to connect Arduino to your computer</li>
+        </ul>
+
+        <h6>Circuit Setup</h6>
+        <ol>
+          <li>Insert the LED into the breadboard.</li>
+          <li>Connect the longer leg (anode) to digital pin 13 via the resistor.</li>
+          <li>Connect the shorter leg (cathode) to the Arduino GND pin.</li>
+          <li>Plug the Arduino into your computer and upload the code.</li>
+        </ol>
+
+        <h6>Code</h6>
+        <pre><code>void setup() {
+  pinMode(13, OUTPUT);
+}
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}</code></pre>
+
+        <p><b>Explanation:</b> The LED turns ON for 1 second, OFF for 1 second, repeatedly. This shows how to write, upload, and execute code on Arduino.</p>
+
+        <h6>Things to Try Next</h6>
+        <ul>
+          <li>Change the delay to make it blink faster or slower.</li>
+          <li>Use two LEDs to blink alternately.</li>
+          <li>Create a pattern like SOS in Morse code.</li>
+        </ul>
+
+        <p>Completing this project gives you confidence to move on to sensors, motors, and real-world IoT projects.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog 2 Modal -->
+<div class="modal fade" id="blog2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title">Home Automation with Raspberry Pi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Imagine switching off your lights with your phone while sitting in another room—or even another country. That’s the power of IoT with Raspberry Pi. This project focuses on how a small computer can automate your home appliances with simple hardware and software setup.</p>
+
+        <h6>Required Components</h6>
+        <ul>
+          <li>Raspberry Pi (any version with Wi-Fi)</li>
+          <li>Relay module (to control appliances)</li>
+          <li>Smartphone with Blynk app</li>
+          <li>Wires, breadboard, and basic tools</li>
+          <li>Appliances like light bulbs or fans</li>
+        </ul>
+
+        <h6>How It Works</h6>
+        <p>The relay acts as a digital switch controlled by the Raspberry Pi’s GPIO pins. When the Pi receives a command from the smartphone app, it sends signals to the relay, turning devices ON or OFF instantly.</p>
+
+        <h6>Setup Steps</h6>
+        <ol>
+          <li>Install Raspberry Pi OS and connect your Pi to Wi-Fi.</li>
+          <li>Install the Blynk app on your phone and create a project.</li>
+          <li>Wire the relay to a GPIO pin of the Pi.</li>
+          <li>Write a Python script to connect the Pi with Blynk.</li>
+          <li>Upload and run the script—your home automation is live!</li>
+        </ol>
+
+        <h6>Applications</h6>
+        <ul>
+          <li>Control lights and fans remotely.</li>
+          <li>Automate irrigation systems for gardens.</li>
+          <li>Schedule devices to turn on/off at set times.</li>
+          <li>Save electricity by monitoring usage patterns.</li>
+        </ul>
+
+        <p>With home automation, you not only save energy but also improve convenience and safety. Once this foundation is ready, you can add voice assistants like Alexa or Google Home for advanced features.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog 3 Modal -->
+<div class="modal fade" id="blog3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title">Top 5 Sensors for Arduino & Pi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Sensors are the eyes and ears of your IoT projects. They let your microcontroller or Raspberry Pi gather real-world data and respond smartly. Here are five must-have sensors for beginners and advanced makers alike.</p>
+
+        <h6>1. PIR Motion Sensor</h6>
+        <p>Detects movement of humans or animals. Perfect for security alarms, automatic lights, or interactive installations.</p>
+
+        <h6>2. DHT11 Temperature & Humidity Sensor</h6>
+        <p>A simple sensor that measures environmental conditions. Common in weather stations, greenhouses, or smart homes.</p>
+
+        <h6>3. Ultrasonic Sensor (HC-SR04)</h6>
+        <p>Measures distance using sound waves. Used in obstacle avoidance robots, parking assistance, or liquid level detection.</p>
+
+        <h6>4. IR Sensor</h6>
+        <p>Infrared sensors detect objects or signals from remotes. Often used in line-following robots or TV remotes.</p>
+
+        <h6>5. Gas Sensor (MQ series)</h6>
+        <p>Detects gases like LPG, CO, or smoke. Essential for safety systems in kitchens, industries, or labs.</p>
+
+        <h6>Why These Sensors?</h6>
+        <p>Together, these five sensors cover motion, environment, distance, object detection, and safety. They form the backbone of most IoT and robotics projects.</p>
+
+        <h6>Projects You Can Try</h6>
+        <ul>
+          <li>Smart doorbell with PIR + camera.</li>
+          <li>Weather dashboard using DHT11.</li>
+          <li>Obstacle avoiding car with ultrasonic sensor.</li>
+          <li>Fire alarm using gas sensor + buzzer.</li>
+        </ul>
+
+        <p>By experimenting with these sensors, you’ll learn how machines interact with the physical world—opening the door to endless creative possibilities in electronics and IoT.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+            What age group can join MakerWorks programs?
+          </button>
+        </h2>
+        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Our programs are designed for children and teens aged 8–17 years, covering beginner to advanced levels in robotics, coding, and STEM skills.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+            Do I need prior experience in coding or robotics?
+          </button>
+        </h2>
+        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Not at all! Our beginner programs start from scratch, gradually building foundational skills in electronics, coding, and robotics.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+            Can I enroll in multiple programs at once?
+          </button>
+        </h2>
+        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Yes! Learners can enroll in multiple programs based on their interest and skill level. Our mentors help guide the best learning path.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading4">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+            How can I contact MakerWorks for queries?
+          </button>
+        </h2>
+        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            You can reach us via email at <a href="mailto:makerworkslab@gmail.com">makerworkslab@gmail.com</a> or WhatsApp at <a href="https://wa.me/919137114223">+91 9137114223</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading5">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+            What is the duration of each program?
+          </button>
+        </h2>
+        <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Program durations vary from 4 weeks to 12 weeks depending on the level and complexity. Each program includes hands-on projects and exercises.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading6">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+            Are the classes online or in-person?
+          </button>
+        </h2>
+        <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            MakerWorks offers both in-person sessions at our Malad lab and online classes via interactive platforms to reach students across India.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading7">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+            Are the kits and materials provided?
+          </button>
+        </h2>
+        <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Yes, all necessary kits, electronics components, and software access are provided during the program. Students can also take certain kits home for practice.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3 shadow-sm rounded-3 border-0">
+        <h2 class="accordion-header" id="faqHeading8">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+            Do you provide certificates after completion?
+          </button>
+        </h2>
+        <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-muted">
+            Absolutely! All students receive a MakerWorks completion certificate highlighting their skills and projects, which can be shared in portfolios or school records.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" data-aos="fade-up">
+  <div class="row align-items-center">
+    <!-- Subscribe Left Column -->
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <h2>Subscribe for Updates</h2>
+      <p>Get the latest workshops, events, and news directly in your inbox.</p>
+      <form class="d-flex flex-column flex-sm-row gap-2 mt-3" 
+            action="YOUR_FORM_ACTION_URL" 
+            method="POST" 
+            target="_blank">
+        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-warning text-white">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Map Right Column -->
+    <div class="col-lg-6">
+      <h2>Find Us</h2>
+      <p>Visit MakerWorks Lab at our Malad East location, Mumbai.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.48956725636!2d72.85801937497995!3d19.173807982050995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b796cadb56b5%3A0x68b4a7a75e5170e7!2sMakerWorks%20%7C%20Robotics%20%26%20Programing%20Classes%20for%20Kids!5e0!3m2!1sen!2sin!4v1756369570774!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     <footer class="pt-5 pb-4" style="background-color: #fff3e0;">
+    <div class="container">
+        <div class="card shadow-lg rounded-4 p-4 border-0" style="background-color: #ffe5b4;">
+            <div class="row">
+
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <h5 class="mb-3">Join The Maker Movement</h5>
+                    <p class="text-dark">Innovation from scratch!</p>
+                    <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <h5>Quick Links</h5>
+                     <ul class="list-unstyled">
+                            <li><a href="/about/" class="text-dark text-decoration-none">About Us</a></li>
+                            <li><a href="/learn/" class="text-dark text-decoration-none">Learn</a></li>
+                            <li><a href="/projects/" class="text-dark text-decoration-none">Projects</a></li>
+                            <li><a href="/Makers" class="text-dark text-decoration-none">Makers</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/blog/" class="text-dark text-decoration-none">Blog</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <h5>Get In Touch</h5>
+                        <p class="text-dark mb-1">Email: makerworkslab@gmail.com</p>
+                        <p class="text-dark mb-1">Phone: +91 9137114223</p>
+                    <p class="text-dark">Address: A-wing, Express Zone, Malad East, Mumbai, Maharashtra, India</p>
+                </div>
+
+            </div>
+
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 text-dark">© 2025 MakerWorks. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
